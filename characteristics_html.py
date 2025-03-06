@@ -186,6 +186,6 @@ def generate_html_characteristics(parallelepipeds, characteristics):
             "html_files/characteristics_paralipipeds.html", "w", encoding="utf-8"
         ) as file:
             file.write(html_content)
-        print("Файл data_summary_1.html успешно создан.")
+        print("Файл characteristics_paralipipeds успешно создан.")
     except Exception as e:
         print(f"Ошибка при создании файла: {e}")

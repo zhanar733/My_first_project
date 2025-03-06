@@ -18,15 +18,23 @@ parallelepipeds = load_parallelepipeds(
 characteristics = calculate_characteristics(parallelepipeds)
 
 # Сохранение характеристик в файл
-with open("json_files/characteristics.json", "w") as file:
-    json.dump(characteristics, file, indent=4)
+try:
+    with open("json_files/characteristics.json", "w") as file:
+        json.dump(characteristics, file, indent=4)
+    print("Файл characteristics.json успешно создан.")
+except Exception as e:
+    print(f"Ошибка при создании файла: {e}")
 
 # Вычисление статистики
 statistics = calculate_statistics(characteristics)
 
 # Сохранение статистики в файл
-with open("json_files/statistics.json", "w") as file:
-    json.dump(statistics, file, indent=4)
+try:
+    with open("json_files/statistics.json", "w") as file:
+        json.dump(statistics, file, indent=4)
+    print("Файл cstatistics.json успешно создан.")
+except Exception as e:
+    print(f"Ошибка при создании файла: {e}")
 
 generate_html_characteristics(parallelepipeds, characteristics)
 
