@@ -1,4 +1,4 @@
-from geometry_utils import (
+from utils.geometry_utils import (
     get_diag,
     get_volume,
     get_surface,

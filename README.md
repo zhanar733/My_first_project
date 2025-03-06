@@ -8,13 +8,10 @@ This project is designed for processing parallelepiped data, calculating their c
 To clone this repository to your computer, run the following command:
 ```sh
 git clone https://github.com/zhanar733/My_first_project.git
+cd My_first_roject
 ```
 
-### 🔹 Installing Dependencies
-Before running the project, install the required dependencies:
-```sh
-pip install -r requirements.txt
-```
+
 
 ## 🛠 Usage
 1. **Prepare the Data**: Place the JSON file containing parallelepiped data into the `json_files` folder.
