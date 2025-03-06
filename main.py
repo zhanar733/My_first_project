@@ -4,6 +4,10 @@ from data_processor import calculate_characteristics
 from statistics_calculator import calculate_statistics
 from characteristics_html import generate_html_characteristics
 from html_statistics import generate_html_statistics
+import os
+
+os.makedirs("html_files", exist_ok=True)  # Создаст папку, если её нет
+
 
 # Загрузка данных
 parallelepipeds = load_parallelepipeds(

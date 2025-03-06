@@ -1,7 +1,3 @@
-import os
-
-
-
 def generate_html_statistics(statistics):
     html_content = f"""
 <!DOCTYPE html>
