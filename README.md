@@ -1,39 +1,46 @@
 # My First Project
 
-Этот проект представляет собой набор скриптов для работы с параллелепипедами. Он включает в себя расчет характеристик параллелепипедов, таких как диагональ, объем, площадь поверхности и другие параметры, а также генерацию HTML-отчета с результатами.
+## 📌 Description
+This project is designed for processing parallelepiped data, calculating their characteristics, and generating HTML reports. It loads data from a JSON file, computes characteristics (such as volume and surface area), generates statistics, and creates reports in HTML format.
 
-## 🚀 Основные функции
+## 🚀 Getting Started
+### 🔹 Cloning the Repository
+To clone this repository to your computer, run the following command:
+```sh
+git clone https://github.com/zhanar733/My_first_project.git
+```
 
-- Расчет характеристик параллелепипедов:
-  - Диагональ
-  - Объем
-  - Площадь поверхности
-  - Углы между ребрами
-  - Радиус описанной сферы
-  - Объем описанной сферы
-- Генерация HTML-отчета с результатами расчетов.
+### 🔹 Installing Dependencies
+Before running the project, install the required dependencies:
+```sh
+pip install -r requirements.txt
+```
 
-## 🛠️ Технологии
+## 🛠 Usage
+1. **Prepare the Data**: Place the JSON file containing parallelepiped data into the `json_files` folder.
+2. **Run the Program**: Execute the following command:
+```sh
+python main.py
+```
+3. **Results**: After execution, the following files will be created in the repository:
+   - 📄 `json_files/characteristics.json` – a file containing the characteristics of the parallelepipeds
+   - 📊 `json_files/statistics.json` – a file containing statistical data
+   - 🖥 `html_files/` – a folder containing HTML reports:
+     - `characteristics.html` – a table of parallelepiped characteristics
+     - `statistics.html` – a report with statistical data
 
-- **Язык программирования**: Python
-- **Библиотеки**:
-  - `os` — для работы с файловой системой.
-  - `json` — для работы с JSON-файлами (если используются).
-- **HTML/CSS** — для генерации отчетов.
+## 📊 Features
+✅ Load parallelepiped data from a JSON file  
+✅ Calculate characteristics (volume, surface area, etc.)  
+✅ Generate statistics based on characteristics  
+✅ Automatically save data in JSON and HTML formats  
+✅ Create HTML reports for easy result visualization  
 
-## 📦 Установка и запуск
+## 🔧 Possible Improvements
+🔹 Add error handling for data loading  
+🔹 Improve the visual design of HTML reports  
+🔹 Support additional input formats (CSV, XML)  
+🔹 Develop a user interface for better interaction  
 
-1. Клонируйте репозиторий:
-   ```bash
-   git clone https://github.com/zhanar733/My_first_project.git
-
-
-2. Перейдите в директорию проекта:
-   ```bash
-   cd My_first_project  
-
-3. Запустите основной скрипт:
-   ```bash
-   python3 main.py
-
-После выполнения скрипта будет создан HTML-файл characteristics_paralipipeds.html и data_statistics.html с результатами расчетов  в папке html_files.И Json-файл characteristics.json и statistics.json в папке json_files.
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
